@@ -49,10 +49,6 @@ class block_course_contacts extends block_base {
             }
             $lname = substr($lname, 0, -1);
         }
-        if (strpos($lname, ' ')) {
-            $names = explode(' ', $lname);
-            $lname = $names[0];
-        }
         return $lname;
     }
 
